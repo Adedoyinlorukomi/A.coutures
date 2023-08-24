@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">                                
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!-- npx tailwindcss -i ./input.css -o ./output.css --watch -->
+    <link rel="stylesheet" href="main.css">
+    <link href="output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </head>
+<body class="">
+  <div class="content">
+    <!-- section-one= navbar -->
+      <div class="flex justify-between mx-[10px] mt-3 border-b-2 pb-2">
+        <div>
+          <img src="./img/search.svg" alt="">
+        </div>
+        <div>A.couture</div>
+        <div class="flex gap-2">
+          <img src="./img/cart.svg" alt="">
+          <img src="./img/user.svg" alt="user">
+        </div>
+      </div>
+   
+       <div class="flex justify-center gap-3 opacity-80 text-[14px] mt-3">
+        <p>Clothes</p>
+        <p>Vintage Scarfs</p>
+        <p>Seaming Services</p>
+        <p>Salon</p>
+        <p>Spa</p>
+       </div>
+    </div>
+
+ <!-- section two= header -->
+    <div class="relative">
+      <video autoplay muted loop id="myVideo">
+        <source src="./video/store.mp4" type="video/mp4">
+      </video>
+      <div id="trend" class="absolute">
+        <div class="flex flex-col">
+          <p class="h1 font-bold">Shop the Trends: Unveiling Your Perfect Style</p>
+          <button class="btn border-[1px] border-[#D2691E] w-[80px]">New collection</button>
+        </div>
+        <p class="text-[22px] font-semibold pr-[70px]">From fashion to self-care, discover the latest in trends and style, as well as products and services
+           to help you relax and recharge. Be inspired by our curated selection of looks, accessories, and spa essentials.</p>
+      </div>  
+    </div>
+
+    <!-- section three= new-in -->
+    <div class="mx-12 mt-5 border-t-[1px] border-black py-3 bg-black h-[1100px]">
+      <div class="h2 mt-5 text-white">New in😍😍</div>
+      <div class="mt-8" id="cloth-grid">
+        <a href="./img/men-tee1.jpeg"><img src="./img/men-tee1.jpeg" alt="" class="cloth-img"></a>
+        <a href="./img/vintShirt.jpg"><img src="./img/vintShirt.jpg" alt="" class="rounded-lg cloth-img"></a>
+        <a href="./img/men-tee2.jpg"><img src="./img/men-tee2.jpg" alt="" class="cloth-img"></a>
+        <a href="./img/Casual-Women-T.jpg"><img src="./img/Casual-Women-T.jpg" alt="" class="cloth-img"></a>
+        <a href="./img/vintShirt1.jpg"><img src="./img/vintShirt1.jpg" alt="" class="cloth-img"></a>
+        <a href="./img/4xl-shirt.jpeg"><img src="./img/4xl-shirt.jpeg" alt="" class="cloth-img"></a>
+      </div>
+    </div>
+
+    <!-- section four= why us? -->
+    <div class="mx-12 mt-5 border-t-[1px] border-black py-3" id="happy">
+       <div class="">
+        <video autoplay muted loop id="happyVideo">
+          <source src="./video/happy.mp4" type="video/mp4">
+        </video>
+      </div>
+      
+
+      <div class="flex flex-col justify-between text-white">
+        <div class="h2 my-5">Our differentiating factor</div>
+        <div>
+          <div>
+            <img src="./img/delivery.svg" alt="" class="">
+            <p>Swift Delivery</p>
+            <p>Lightning-fast delivery, guaranteed</p>
+          </div>
+          <div>
+            <img src="./img/checkmark.svg" alt="">
+            <p>Tested and Trusted</p>
+            <p>We provide 5-star services and our customers' ratings are proof!</p>
+          </div>
+          <div>
+            <img src="./img/purchase.svg" alt="">
+            <p>Unbeatable prices</p>
+            <p>For our materials and quality you won't find better prices anywhere!</p>
+          </div>
+          <div>
+            <img src="./img/sprout.svg" alt="">
+            <p>Clean environment</p>
+            <p>Organized and efficient, inside and out</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--Section 4= Seaming services -->
+     <div class="relative">
+      <video autoplay muted loop id="seamVideo">
+        <source src="./video/seam.mp4" type="video/mp4">
+      </video>
+      <div id="seam" class="absolute ">
+        <div class="flex flex-col text-gray-800">
+          <p class="h1 font-bold">Our Unmatched Seaming Services</p>
+          <button class="btn border-[1px] border-[#D2691E] w-[80px]">New collection</button>
+        </div>
+        <p class="text-[22px] font-semibold pr-[70px] text-gray-800">From fashion to self-care, discover the latest in trends and style, as well as products and services
+           to help you relax and recharge. Be inspired by our curated selection of looks, accessories, and spa essentials.</p>
+      </div>  
+    </div>
+
+    <!-- Optional: some overlay text to describe the video -->
+    <!-- <div class="content">
+      <h1>Heading</h1>
+      <p>Lorem ipsum...</p> -->
+      <!-- Use a button to pause/play the video with JavaScript -->
+      <!-- <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div> -->
+   
+    <script src="./script.js"></script>
+</body>
+</html>

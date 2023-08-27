@@ -12,26 +12,57 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </head>
 <body class="">
-  <div class="content">
+  <div class="content pb-3">
     <!-- section-one= navbar -->
       <div class="flex justify-between mx-[10px] mt-3 border-b-2 pb-2">
         <div>
           <img src="./img/search.svg" alt="">
         </div>
-        <div>A.couture</div>
+        <div class="text-3xl font-semibold">A.couture</div>
         <div class="flex gap-2">
-          <img src="./img/cart.svg" alt="">
-          <img src="./img/user.svg" alt="user">
+          <img src="./img/cart.svg" alt="" class="cursor-pointer">
+          <img src="./img/user.svg" alt="user" class="cursor-pointer">
         </div>
       </div>
    
        <div class="flex justify-center gap-3 opacity-80 text-[14px] mt-3">
-        <p>Clothes</p>
-        <p>Vintage Scarfs</p>
-        <p>Seaming Services</p>
-        <p>Salon</p>
-        <p>Spa</p>
+        <a href="#" class="no-underline text-white text-sm hover:animate-bounce">Clothes</a>
+        <a href="#" class="no-underline text-white text-sm hover:animate-bounce">Vintage Scarfs</a>
+        <a href="#" class="no-underline text-white text-sm hover:animate-bounce">Seaming Services</a>
+        <a href="#" class="no-underline text-white text-sm hover:animate-bounce">Salon</a>
+        <a href="#" class="no-underline text-white text-sm hover:animate-bounce">Spa</a>
        </div>
+    </div>
+    <div class="offcanvas offcanvas-end bg-black" id="demo">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close ml-[95%] bg-white" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body flex flex-col gap-8">
+          <div class="flex justify-between border-b-[1px] border-white">
+          <a class="mt-[-3px]" href="index.html" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="You are currently on the homepage" id="home">Home</a>
+          <a rel="noopener" href="#follow_me_on" id="home" class=""><img src="./images/goTo.svg" alt=""></a>
+          </div>
+          <div class="flex justify-between">
+              <a rel="noopener" href="#work" id="home" class="">Work</a>
+              <a rel="noopener" href="#follow_me_on" id="home" class=""><img src="./images/goTo.svg" alt=""></a>
+          </div>
+          <div class="flex justify-between">
+              <a rel="noopener" href="#about-sec" id="home" class="">About</a>
+              <a rel="noopener" href="#follow_me_on" id="home" class=""><img src="./images/goTo.svg" alt=""></a>
+          </div>
+          <div class="flex justify-between">
+              <a rel="noopener" href="#follow_me_on" id="home" class="">Contact</a>
+              <a rel="noopener" href="#follow_me_on" id="home" class=""><img src="./images/goTo.svg" alt=""></a>
+          </div>
+
+          <div class="flex flex-col gap-2 mt-5 text-white"> 
+              <a href="adedoyinlorukomi@outlook.com" class="text-white">adedoyinlorukomi@outlook.com</a>
+              <div class="flex justify-between border-b-[1px] border-white">
+                  <p>View Resume</p>
+                  <a href="adedoyinlorukomi@outlook.com" id="home" class=""><img src="./images/goTo.svg" alt=""></a>
+                  </div>
+          </div>
+      </div>
     </div>
 
  <!-- section two= header -->
@@ -45,7 +76,7 @@
           <button class="btn border-[1px] border-[#D2691E] w-[80px]">New collection</button>
         </div>
         <p class="text-[22px] font-semibold pr-[70px]">From fashion to self-care, discover the latest in trends and style, as well as products and services
-           to help you relax and recharge. Be inspired by our curated selection of looks, accessories, and spa essentials.</p>
+       to help you relax and recharge. Be inspired by our curated selection of looks, accessories, and spa essentials.</p>
       </div>  
     </div>
 

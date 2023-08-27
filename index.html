@@ -64,6 +64,7 @@
 
     <!-- section four= why us? -->
     <div class="mx-12 mt-5 border-t-[1px] border-black py-3" id="happy">
+      <!-- Remove bg -->
        <div class="">
         <video autoplay muted loop id="happyVideo">
           <source src="./video/happy.mp4" type="video/mp4">
@@ -71,7 +72,7 @@
       </div>
       
 
-      <div class="flex flex-col justify-between text-white">
+      <div class="flex flex-col justify-between text-black self-end">
         <div class="h2 my-5">Our differentiating factor</div>
         <div>
           <div>
@@ -100,16 +101,16 @@
     </div>
 
     <!--Section 4= Seaming services -->
-     <div class="relative">
+     <div class="relative h-[1000px]">
       <video autoplay muted loop id="seamVideo">
         <source src="./video/seam.mp4" type="video/mp4">
       </video>
-      <div id="seam" class="absolute ">
-        <div class="flex flex-col text-gray-800">
+      <div id="seam" class="absolute text-white bg-[#00000080]">
+        <div class="flex flex-col">
           <p class="h1 font-bold">Our Unmatched Seaming Services</p>
           <button class="btn border-[1px] border-[#D2691E] w-[80px]">New collection</button>
         </div>
-        <p class="text-[22px] font-semibold pr-[70px] text-gray-800">From fashion to self-care, discover the latest in trends and style, as well as products and services
+        <p class="text-[22px] font-semibold pr-[70px]">From fashion to self-care, discover the latest in trends and style, as well as products and services
            to help you relax and recharge. Be inspired by our curated selection of looks, accessories, and spa essentials.</p>
       </div>  
     </div>
@@ -121,7 +122,83 @@
       <!-- Use a button to pause/play the video with JavaScript -->
       <!-- <button id="myBtn" onclick="myFunction()">Pause</button>
     </div> -->
-   
+
+    <div id="footer" class="bg-black text-white px-[55px]">
+
+        <div id="testimonial" class="flex flex-col gap-5 mt-10">
+          <div class="text-[40px]">What people are Saying About A.Coutures</div>
+          <p class="text-sm">Our customers love our services😁</p>
+          <div><img src="./img/flash.svg" alt=""></div>
+          <div>I feel very satisfied using this brand , I don't wait for delivery and i get what i order , I even get returning customers' packages 😍</div>
+          <p>_ Aria Christian</p>
+        </div>
+        <!-- bg-gray-950 -->
+        <div id="join" class=" mx-[2] mt-10 px-3">
+          <div class="flex flex-col gap-3">
+            <img src="./img/shop.svg" alt="" class="self-center w-min">
+            <p class="text-3xl text-center">Get Started</p>
+          </div>
+
+          <div class="flex flex-col">
+            <form action="" class="mt-4 flex flex-col gap-2">
+              <label for="email" class="text-xl">Email</label>
+              <input type="text" placeholder="Enter your email" class="rounded-[5px] form-control" style="height: 40px; width: 90%;">
+              <label for="password" class="text-xl">Password</label>
+              <input type="password" placeholder="Choose a strong password" class="rounded-[5px] form-control" style="height: 40px; width: 90%;">
+            </form>
+            <button class="bg-[#1BCBD8] py-[15px] mt-3 px-[40px] self-center rounded-2xl text-[#000000] text-[16px] font-semibold">Proceed to sign up</button></div>
+        </div>
+
+        <div id="Join our mailing list" class="self-end mb-7">
+          <p class="text-[40px]">Join our mailing list📩</p>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Your Email Address">
+              <button class="border-[white] border-2 text-white" type="submit">Join Us</button>
+            </div>
+        </div>
+
+        <div id="support, products, help and solution" class="flex justify-around">
+          <div class="text-center">
+            <p class="animate-bounce cursor-pointer">OUR COMPANY</p>
+            <p class="hover:animate-pulse cursor-pointer">About</p>
+            <p class="hover:animate-pulse cursor-pointer">Contact us</p>
+            <p class="hover:animate-pulse cursor-pointer">Blog</p>
+            <p class="hover:animate-pulse cursor-pointer">Referral Policy</p>
+            <p class="hover:animate-pulse cursor-pointer">Privary Policy</p>
+            <p class="hover:animate-pulse cursor-pointer">FAQ</p>
+            <p class="hover:animate-pulse cursor-pointer">Vacancies</p>
+            <p class="hover:animate-pulse cursor-pointer">Return policy</p>
+          </div>
+          <div class="text-center">
+            <p class="animate-bounce cursor-pointer">PRODUCTS</p>
+            <p class="hover:animate-pulse cursor-pointer">Vintage Scarfs</p>
+            <p class="hover:animate-pulse cursor-pointer">Men clothes</p>
+            <p class="hover:animate-pulse cursor-pointer">Women Clothes</p><br>
+            <p class="animate-bounce cursor-pointer">SERVICES</p>
+            <p class="hover:animate-pulse cursor-pointer">Spa service</p>
+            <p class="hover:animate-pulse cursor-pointer">Seaming service</p>
+            <p class="hover:animate-pulse cursor-pointer">Salon</p>
+          </div>
+          <div class="text-center">
+            <p class="mt-5 animate-bounce cursor-pointer">HELP AND SOLUTION</p>
+            <div class=" hover:scale-110"><a href="#" class="no-underline text-white">support@Acoutures.com</a></div>
+            <p class="mt-8 animate-bounce cursor-pointer">SOCIALS</p>
+            <div class="flex gap-2">
+              <img src="./img/instagram.svg" alt="">
+              <p>Instagram</p>
+            </div>
+            <div class="flex gap-2">
+              <img src="./img/twitter.svg" alt="">
+              <p>Twitter</p>
+            </div>
+            <div class="flex gap-2">
+              <img src="./img/pininterest.svg" alt="">
+              <p>PinInterest</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div>Copyright and </div>
     <script src="./script.js"></script>
 </body>
 </html>

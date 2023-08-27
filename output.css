@@ -812,6 +812,10 @@ video {
   height: 1100px;
 }
 
+.w-\[130px\] {
+  width: 130px;
+}
+
 .w-\[80px\] {
   width: 80px;
 }
@@ -2082,6 +2086,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-\[14px\] {
   font-size: 14px;
 }
@@ -2637,7 +2646,19 @@ video {
     color: black;
   } */
 
-@media (max-width: 639px) {
+@media only screen and (max-width: 900px) {
+  #trend{
+    position: relative;
+    background: #ffffff;
+    color: black;
+    opacity: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 428px) {
   .sm\:container {
     width: 100%;
   }
@@ -2697,15 +2718,36 @@ video {
   text-align: center;
 }
 
+@media (max-width: 900px) {
+  .lg\:gap-\[-40px\] {
+    gap: -40px;
+  }
+
+  .lg\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
-  @media (max-width: 1023px) {
+  @media (max-width: 900px) {
     .dark\:lg\:hover\:\[paint-order\:markers\]:hover {
       paint-order: markers;
     }
   }
 }
 
-@media (max-width: 639px) {
+@media (max-width: 428px) {
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }

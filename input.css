@@ -100,3 +100,15 @@
     background: #ddd;
     color: black;
   } */
+
+  @media only screen and (max-width: 900px) {
+    #trend{
+      position: relative;
+      background: #ffffff;
+      color: black;
+      opacity: 100;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }

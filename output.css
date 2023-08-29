@@ -815,14 +815,13 @@ video {
   width: 230px;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .w-min {
   width: -moz-min-content;
   width: min-content;
-}
-
-.w-max {
-  width: -moz-max-content;
-  width: max-content;
 }
 
 .flex-shrink {
@@ -2027,6 +2026,10 @@ video {
   padding-top: 1.25rem;
 }
 
+.pt-\[80px\] {
+  padding-top: 80px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2664,6 +2667,7 @@ video {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-top: 20px;
   }
 
   #footer{
@@ -2749,10 +2753,6 @@ video {
     margin-top: 0.5rem;
   }
 
-  .lg\:flex {
-    display: flex;
-  }
-
   .lg\:grid {
     display: grid;
   }
@@ -2761,24 +2761,8 @@ video {
     height: 700px;
   }
 
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-
-  .lg\:flex-col {
-    flex-direction: column;
-  }
-
-  .lg\:gap-5 {
-    gap: 1.25rem;
   }
 
   .lg\:gap-\[-40px\] {
@@ -2823,10 +2807,6 @@ video {
     margin-top: 0px;
   }
 
-  .sm\:flex {
-    display: flex;
-  }
-
   .sm\:grid {
     display: grid;
   }
@@ -2850,6 +2830,11 @@ video {
   .sm\:px-\[20px\] {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .sm\:px-\[40px\] {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .sm\:pb-0 {

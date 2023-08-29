@@ -13,7 +13,7 @@
   </head>
 <body class="">
     
-  <div class="justify-between bg-black fixed z-10 px-[10px] text-white h-14 align-middle sm:mt-0 sm:pb-0 sm:border-none border-b-2 pb-2 hidden sm:grid sm:grid-cols-3 sm:justify-between">
+  <div class="justify-between bg-black fixed z-10 px-[10px] text-white h-14 align-middle sm:mt-0 sm:pb-0 sm:border-none border-b-2 pb-2 hidden sm:grid sm:grid-cols-3 sm:justify-between w-max">
     <div class="flex gap-3 scale-[70%]">
       <img src="./img/search.svg" alt="">
       <img src="./img/cart.svg" alt="" class="cursor-pointer">
@@ -26,7 +26,8 @@
   <div class="content pb-3 sm:collapse">
     <!-- section-one= navbar -->
       <div class="flex justify-between mx-[10px] mt-3 border-b-2  pb-2 sm:collapse">
-        <div>
+        <div class="flex gap-2">
+          <button>navbar</button>
           <img src="./img/search.svg" alt="">
         </div>
         <div class="text-3xl font-semibold lg:text-xl">A.couture</div>
@@ -63,9 +64,9 @@
       <div id="trend" class="absolute">
         <div class="flex flex-col lg:gap-[-40px]">
           <p class="text-4xl font-bold lg:text-2xl sm:text-xl">Shop the Trends: Unveiling Your Perfect Style</p>
-          <a href="#" class=" border-[1px] border-[#D2691E] w-[130px] no-underline text-center text-white lg:text-black">New collection</a>
+          <a href="#" class="bg-black border-[1px] border-[#D2691E] w-[130px] no-underline text-center text-gray-100">New collection</a>
         </div>
-        <p class="text-2xl font-semibold pr-[70px] lg:text-lg sm:text-sm sm:font-medium">From fashion to self-care, discover the latest in trends and style, as well as products and services
+        <p class="text-Xl font-semibold pr-[70px] lg:text-sm sm:text-xs sm:font-medium">From fashion to self-care, discover the latest in trends and style, as well as products and services
        to help you relax and recharge. Be inspired by our curated selection of looks, accessories, and spa essentials.</p>
       </div>  
     </div>
@@ -157,17 +158,17 @@
     </div>
 
     <!--Section 4= Seaming services -->
-    <div class="relative border-t-2 mt-2 pt-2">
+    <div class="relative border-t-[1.5px] border-black mt-2 pt-3">
       <video autoplay muted loop id="myVideo">
         <source src="./video/seam.mp4" type="video/mp4">
       </video>
       <div id="trend" class="absolute">
         <div class="flex flex-col lg:gap-[-40px]">
-          <p class="text-4xl font-bold lg:text-2xl sm:text-xl">Shop the Trends: Unveiling Your Perfect Style</p>
-          <a href="#" class=" border-[1px] border-[#D2691E] w-[130px] no-underline text-center text-white lg:text-black">New collection</a>
+          <p class="text-4xl font-bold lg:text-2xl sm:text-xl">Customize, repair, and revitalize your clothing and textiles!</p>
+          <a href="#" class="bg-black border-[1px] border-[#D2691E] w-[230px] no-underline text-center text-gray-100">Check out our dress collection</a>
         </div>
-        <p class="text-2xl font-semibold pr-[70px] lg:text-lg sm:text-sm sm:font-medium">From fashion to self-care, discover the latest in trends and style, as well as products and services
-       to help you relax and recharge. Be inspired by our curated selection of looks, accessories, and spa essentials.</p>
+        <p class="text-xl font-semibold pr-[70px] lg:text-SM sm:text-xs sm:font-medium">Our skilled seamstresses offer a wide range of seaming services, including alterations, repairs, custom tailoring, embroidery, and upholstery. We work with a variety of materials, from delicate silks to sturdy denim,
+           and pride ourselves on our attention to detail and commitment to customer satisfaction.</p>
       </div>  
     </div>
 
@@ -179,22 +180,23 @@
       <!-- <button id="myBtn" onclick="myFunction()">Pause</button>
     </div> -->
 
-    <div id="footer" class="bg-black text-white px-[55px]">
-
-        <div id="demo1" class="carousel slide border-b-2 border-white" data-bs-ride="carousel">
+    <div id="footer" class="bg-black text-white px-[55px] mt-8">
+      <div>
+        <div class="text-[40px]">What people are Saying About A.Coutures</div>
+        <div id="demo1" class="carousel slide" data-bs-ride="carousel">
 
           <!-- Indicators/dots -->
-          <div class="carousel-indicators">
+          <!-- <div class="carousel-indicators">
             <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
             <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
             <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
-          </div>
+            <button type="button" data-bs-target="#demo1" data-bs-slide-to="3"></button>
+          </div> -->
           
           <!-- The slideshow/carousel -->
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div id="testimonial" class="flex flex-col gap-5 mt-10">
-                <div class="text-[40px]">What people are Saying About A.Coutures</div>
+              <div id="testimonial" class="flex flex-col mt-10">
                 <p class="text-sm">Our customers love our services😁</p>
                 <div><img src="./img/flash.svg" alt=""></div>
                 <div>I feel very satisfied using this brand , I don't wait for delivery and i get what i order , I even get returning customers' packages 😍</div>
@@ -202,30 +204,27 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div id="testimonial" class="flex flex-col gap-5 mt-10">
-                <div class="text-[40px]">What people are Saying About A.Coutures</div>
+              <div id="testimonial" class="flex flex-col mt-10">
                 <p class="text-sm">Our customers love our services😁</p>
                 <div><img src="./img/flash.svg" alt=""></div>
-                <div>I feel very satisfied using this brand , I don't wait for delivery and i get what i order , I even get returning customers' packages 😍</div>
-                <p>_ Aria Christian</p>
+                <div>I recommend getting your dresses, shirts and other clothing from A.coutures😍</div>
+                <p>_ Triumph Christian</p>
               </div>
             </div> 
             <div class="carousel-item">
-              <div id="testimonial" class="flex flex-col gap-5 mt-10">
-                <div class="text-[40px]">What people are Saying About A.Coutures</div>
+              <div id="testimonial" class="flex flex-col mt-10">
                 <p class="text-sm">Our customers love our services😁</p>
                 <div><img src="./img/flash.svg" alt=""></div>
-                <div>I feel very satisfied using this brand , I don't wait for delivery and i get what i order , I even get returning customers' packages 😍</div>
+                <div>Even their Spa and salon services are great! Their staffs are hospitable and nice</div>
                 <p>_ Aria Christian</p>
               </div>
             </div>
             <div class="carousel-item">
-              <div id="testimonial" class="flex flex-col gap-5 mt-10">
-                <div class="text-[40px]">What people are Saying About A.Coutures</div>
+              <div id="testimonial" class="flex flex-col mt-10">
                 <p class="text-sm">Our customers love our services😁</p>
                 <div><img src="./img/flash.svg" alt=""></div>
-                <div>I feel very satisfied using this brand , I don't wait for delivery and i get what i order , I even get returning customers' packages 😍</div>
-                <p>_ Aria Christian</p>
+                <div>They dressed me for my wedding and i love it😍</div>
+                <p>_ Doyin Zainab</p>
               </div>
             </div>
 
@@ -233,15 +232,16 @@
           
           <!-- Left and right controls/icons -->
           <button class="carousel-control-prev" type="button" data-bs-target="#demo1" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
+            <span class=""></span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#demo1" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
+            <img src="./img/go.svg" alt=""></span>
           </button>
         </div>
+      </div>
 
         <!-- bg-gray-950 -->
-        <div id="join" class=" mx-[2] mt-10 px-3 border-b-2 border-white">
+        <div id="join" class=" mx-[2] mt-10 px-3 border-b-2 border-white sm:border-none">
           <div class="flex flex-col gap-3">
             <img src="./img/shop.svg" alt="" class="self-center w-min">
             <p class="text-3xl text-center">Get Started</p>
@@ -250,14 +250,14 @@
           <div class="flex flex-col">
             <form action="" class="mt-4 flex flex-col gap-2">
               <label for="email" class="text-xl">Email</label>
-              <input type="text" placeholder="Enter your email" class="rounded-[5px] form-control" style="height: 40px; width: 90%;">
+              <input type="text" placeholder="Enter your email" class="rounded-[5px] form-control input">
               <label for="password" class="text-xl">Password</label>
-              <input type="password" placeholder="Choose a strong password" class="rounded-[5px] form-control" style="height: 40px; width: 90%;">
+              <input type="password" placeholder="Choose a strong password" class="rounded-[5px] form-control input">
             </form>
-            <button class="bg-[#1BCBD8] py-[15px] mt-3 px-[40px] self-center rounded-2xl text-[#000000] text-[16px] font-semibold">Proceed to sign up</button></div>
+            <button class="bg-[#1BCBD8] py-[15px] mt-3 px-[40px] sm:px-[20px] self-center rounded-2xl text-[#000000] text-[16px] font-semibold">Proceed to sign up</button></div>
         </div>
 
-        <div id="Join our mailing list" class="self-end mb-7">
+        <div id="Join our mailing list" class="self-center mb-7">
           <p class="text-[40px]">Join our mailing list📩</p>
             <div class="input-group mb-3">
               <input type="text" class="form-control" placeholder="Your Email Address">
@@ -265,8 +265,8 @@
             </div>
         </div>
 
-        <div id="support, products, help and solution" class="flex justify-around lg:flex-col">
-          <div class="text-center lg:flex lg:gap-5">
+        <!-- <div id="support, products, help and solution" class="flex justify-around">
+          <div class="text-center lg:gap-5">
             <p class="animate-bounce cursor-pointer">OUR COMPANY</p>
             <p class="hover:animate-pulse cursor-pointer">About</p>
             <p class="hover:animate-pulse cursor-pointer">Contact us</p>
@@ -277,7 +277,7 @@
             <p class="hover:animate-pulse cursor-pointer">Vacancies</p>
             <p class="hover:animate-pulse cursor-pointer">Return policy</p>
           </div>
-          <div class="text-center lg:flex lg:gap-5">
+          <div class="text-center lg:gap-5">
             <p class="animate-bounce cursor-pointer">PRODUCTS</p>
             <p class="hover:animate-pulse cursor-pointer">Vintage Scarfs</p>
             <p class="hover:animate-pulse cursor-pointer">Men clothes</p>
@@ -287,7 +287,7 @@
             <p class="hover:animate-pulse cursor-pointer">Seaming service</p>
             <p class="hover:animate-pulse cursor-pointer">Salon</p>
           </div>
-          <div class="text-center lg:flex lg:gap-5">
+          <div class="text-center lg:gap-5">
             <p class="mt-5 animate-bounce cursor-pointer">HELP AND SOLUTION</p>
             <div class=" hover:scale-110"><a href="#" class="no-underline text-white">support@Acoutures.com</a></div>
             <p class="mt-8 animate-bounce cursor-pointer">SOCIALS</p>
@@ -305,7 +305,7 @@
             </div>
           </div>
         </div>
-    </div>
+    </div> -->
     <div>Copyright and </div>
     <script src="./script.js"></script>
 </body>

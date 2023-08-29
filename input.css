@@ -45,7 +45,8 @@
     color: white;
     opacity: 80%;
     display: grid;
-    grid-template-rows: 2fr 1fr;
+    gap: 20px;
+    grid-template-rows: 1fr 1fr;
   }
   #seam{
     top: 41%;
@@ -99,6 +100,11 @@
   #myBtn:hover {
     background: #ddd;
     color: black;
+  } */
+
+  /* .input{
+    width: 90%;
+    height: 40px;
   } */
 
   @media only screen and (max-width: 900px) {

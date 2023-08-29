@@ -1814,6 +1814,10 @@ video {
   border-top-width: 1px;
 }
 
+.border-t-2 {
+  border-top-width: 2px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -2690,7 +2694,7 @@ video {
   }
 
   #happy{
-    display: unset;
+    grid-template-columns: 0.01fr 0.99fr;
   }
 }
 
@@ -2759,8 +2763,16 @@ video {
     visibility: collapse;
   }
 
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
   .lg\:mt-2 {
     margin-top: 0.5rem;
+  }
+
+  .lg\:mt-1 {
+    margin-top: 0.25rem;
   }
 
   .lg\:flex {
@@ -2802,6 +2814,11 @@ video {
     font-size: 0.75rem;
     line-height: 1rem;
   }
+
+  .lg\:text-black {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -2819,10 +2836,6 @@ video {
 
   .sm\:mt-0 {
     margin-top: 0px;
-  }
-
-  .sm\:mt-1 {
-    margin-top: 0.25rem;
   }
 
   .sm\:grid {

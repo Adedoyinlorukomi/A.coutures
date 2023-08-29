@@ -116,6 +116,6 @@
       flex-direction: column;
     }
     #happy{
-      display: unset;
+      grid-template-columns: 0.01fr 0.99fr;
     }
   }

@@ -12,20 +12,40 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </head>
 <body class="">
-  <div class="content pb-3">
+    
+  <div class="justify-between bg-black fixed z-10 px-[10px] text-white h-14 align-middle sm:mt-0 sm:pb-0 sm:border-none border-b-2 pb-2 hidden sm:grid sm:grid-cols-3 sm:justify-between">
+    <div class="flex gap-3 scale-[70%]">
+      <img src="./img/search.svg" alt="">
+      <img src="./img/cart.svg" alt="" class="cursor-pointer">
+      <img src="./img/user.svg" alt="user" class="cursor-pointer">
+    </div>
+    <div class="text-3xl font-semibold lg:text-xl pt-2">A.couture</div>
+    <button>navbar</button>
+  </div>
+
+  <div class="content pb-3 sm:collapse">
     <!-- section-one= navbar -->
-      <div class="flex justify-between mx-[10px] mt-3 border-b-2 pb-2">
+      <div class="flex justify-between mx-[10px] mt-3 border-b-2  pb-2 sm:collapse">
         <div>
           <img src="./img/search.svg" alt="">
         </div>
-        <div class="text-3xl font-semibold">A.couture</div>
+        <div class="text-3xl font-semibold lg:text-xl">A.couture</div>
         <div class="flex gap-2">
           <img src="./img/cart.svg" alt="" class="cursor-pointer">
           <img src="./img/user.svg" alt="user" class="cursor-pointer">
         </div>
       </div>
+      <!-- <div class="justify-between mx-[10px] sm:mt-0 sm:pb-0 mt-3 sm:border-none border-b-2 pb-2 hidden sm:grid sm:grid-cols-3 sm:justify-between">
+        <div class="flex gap-3 scale-[70%]">
+          <img src="./img/search.svg" alt="">
+          <img src="./img/cart.svg" alt="" class="cursor-pointer">
+          <img src="./img/user.svg" alt="user" class="cursor-pointer">
+        </div>
+        <div class="text-3xl font-semibold lg:text-xl">A.couture</div>
+        <button>navbar</button>
+      </div> -->
    
-       <div class="flex justify-center gap-3 opacity-80 text-[14px] mt-3">
+       <div class="flex justify-center gap-3 opacity-80 text-[14px] mt-3 lg:text-xs sm:collapse">
         <a href="#" class="no-underline text-white text-sm hover:animate-bounce">Clothes</a>
         <a href="#" class="no-underline text-white text-sm hover:animate-bounce">Vintage Scarfs</a>
         <a href="#" class="no-underline text-white text-sm hover:animate-bounce">Seaming Services</a>
@@ -33,7 +53,7 @@
         <a href="#" class="no-underline text-white text-sm hover:animate-bounce">Spa</a>
        </div>
     </div>
-    <div class="offcanvas offcanvas-end bg-black" id="demo">
+    <!-- <div class="offcanvas offcanvas-end bg-black" id="demo">
       <div class="offcanvas-header">
         <button type="button" class="btn-close ml-[95%] bg-white" data-bs-dismiss="offcanvas"></button>
       </div>
@@ -63,7 +83,7 @@
                   </div>
           </div>
       </div>
-    </div>
+    </div> -->
 
  <!-- section two= header -->
     <div class="relative">
@@ -72,58 +92,93 @@
       </video>
       <div id="trend" class="absolute">
         <div class="flex flex-col lg:gap-[-40px]">
-          <p class="text-4xl font-bold lg:text-xl sm:text-sm">Shop the Trends: Unveiling Your Perfect Style</p>
-          <a href="#" class=" border-[1px] border-[#D2691E] w-[130px]">New collection</a>
+          <p class="text-4xl font-bold lg:text-2xl sm:text-xl">Shop the Trends: Unveiling Your Perfect Style</p>
+          <a href="#" class=" border-[1px] border-[#D2691E] w-[130px] no-underline text-center text-black">New collection</a>
         </div>
-        <p class="text-[22px] font-semibold pr-[70px] lg:text-sm sm:text-sm">From fashion to self-care, discover the latest in trends and style, as well as products and services
+        <p class="text-2xl font-semibold pr-[70px] lg:text-lg sm:text-sm sm:font-medium">From fashion to self-care, discover the latest in trends and style, as well as products and services
        to help you relax and recharge. Be inspired by our curated selection of looks, accessories, and spa essentials.</p>
       </div>  
     </div>
 
     <!-- section three= new-in -->
-    <div class="mx-12 mt-5 border-t-[1px] border-black py-3 bg-black h-[1100px]">
+    <div class=" mt-5 border-t-[1px] border-black py-3 bg-black lg:h-[700px] sm:h-[400px]">
       <div class="h2 mt-5 text-white">New in😍😍</div>
-      <div class="mt-8" id="cloth-grid">
-        <a href="./img/men-tee1.jpeg"><img src="./img/men-tee1.jpeg" alt="" class="cloth-img"></a>
-        <a href="./img/vintShirt.jpg"><img src="./img/vintShirt.jpg" alt="" class="rounded-lg cloth-img"></a>
-        <a href="./img/men-tee2.jpg"><img src="./img/men-tee2.jpg" alt="" class="cloth-img"></a>
-        <a href="./img/Casual-Women-T.jpg"><img src="./img/Casual-Women-T.jpg" alt="" class="cloth-img"></a>
-        <a href="./img/vintShirt1.jpg"><img src="./img/vintShirt1.jpg" alt="" class="cloth-img"></a>
-        <a href="./img/4xl-shirt.jpeg"><img src="./img/4xl-shirt.jpeg" alt="" class="cloth-img"></a>
+      <div id="demo" class="carousel slide mt-7" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="./img/men-tee1.jpeg"><img src="./img/men-tee1.jpeg" alt="" class="cloth-img d-block" style="max-width: 60%; margin: 0 auto;"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="./img/Casual-Women-T.jpg"><img src="./img/Casual-Women-T.jpg" alt="" class="cloth-img d-block" style="max-width: 60%; margin: 0 auto;"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="./img/two-colored.jpg"><img src="./img/two-colored.jpg" alt="" class="cloth-img d-block" style="max-width: 60%; margin: 0 auto;"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="./img/4xl-shirt.jpeg"><img src="./img/4xl-shirt.jpeg" alt="" class="cloth-img d-block" style="max-width: 60%; margin: 0 auto;"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="./img/vintShirt.jpg"><img src="./img/vintShirt.jpg" alt="" class="cloth-img d-block" style="max-width: 60%; margin: 0 auto;"></a>
+          </div>
+        </div>
+        
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
     </div>
 
     <!-- section four= why us? -->
-    <div class="mx-12 mt-5 border-t-[1px] border-black py-3" id="happy">
+    <div class="mt-5 sm:mt-1 lg:mt-2 border-t-[1px] border-black py-3" id="happy">
       <!-- Remove bg -->
-       <div class="">
-        <video autoplay muted loop id="happyVideo">
-          <source src="./video/happy.mp4" type="video/mp4">
-        </video>
+       <div class="lg:collapse">
+        <img src="./img/suprised.jpg" alt="" width="60%" height="60%" class="m-auto pt-5">
       </div>
-      
 
       <div class="flex flex-col justify-between text-black self-end">
         <div class="h2 my-5">Our differentiating factor</div>
         <div>
           <div>
-            <img src="./img/delivery.svg" alt="" class="">
-            <p>Swift Delivery</p>
-            <p>Lightning-fast delivery, guaranteed</p>
+            <div class="flex gap-2">
+              <img src="./img/delivery.svg" alt="" class="pb-3">
+              <p class="text-xl font-semibold sm:text-lg">Swift Delivery</p>
+            </div>
+            <p class="text-sm">Lightning-fast delivery, guaranteed</p>
           </div>
           <div>
-            <img src="./img/checkmark.svg" alt="">
-            <p>Tested and Trusted</p>
-            <p>We provide 5-star services and our customers' ratings are proof!</p>
+            <div class="flex gap-2">
+              <img src="./img/checkmark.svg" alt="" class="pb-3">
+              <p class="text-xl font-semibold sm:text-lg">Tested and Trusted</p>
+            </div>
+            <p class="text-sm">We provide 5-star services and our customers' ratings are proof!</p>
           </div>
           <div>
-            <img src="./img/purchase.svg" alt="">
-            <p>Unbeatable prices</p>
-            <p>For our materials and quality you won't find better prices anywhere!</p>
+            <div class="flex gap-2">
+              <img src="./img/purchase.svg" alt="" class="pb-3">
+              <p class="text-xl font-semibold sm:text-lg">Unbeatable prices</p>
+            </div>
+            <p class="text-sm">For our materials and quality you won't find better prices anywhere!</p>
           </div>
           <div>
-            <img src="./img/sprout.svg" alt="">
-            <p>Clean environment</p>
+            <div class="flex gap-2">
+              <img src="./img/sprout.svg" alt="" class="pb-3">
+              <p class="text-xl font-semibold sm:text-lg">Clean environment</p>
+            </div>
             <p>Organized and efficient, inside and out</p>
           </div>
         </div>
@@ -156,15 +211,67 @@
 
     <div id="footer" class="bg-black text-white px-[55px]">
 
-        <div id="testimonial" class="flex flex-col gap-5 mt-10">
-          <div class="text-[40px]">What people are Saying About A.Coutures</div>
-          <p class="text-sm">Our customers love our services😁</p>
-          <div><img src="./img/flash.svg" alt=""></div>
-          <div>I feel very satisfied using this brand , I don't wait for delivery and i get what i order , I even get returning customers' packages 😍</div>
-          <p>_ Aria Christian</p>
+        <div id="demo1" class="carousel slide border-b-2 border-white" data-bs-ride="carousel">
+
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
+          </div>
+          
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div id="testimonial" class="flex flex-col gap-5 mt-10">
+                <div class="text-[40px]">What people are Saying About A.Coutures</div>
+                <p class="text-sm">Our customers love our services😁</p>
+                <div><img src="./img/flash.svg" alt=""></div>
+                <div>I feel very satisfied using this brand , I don't wait for delivery and i get what i order , I even get returning customers' packages 😍</div>
+                <p>_ Aria Christian</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="testimonial" class="flex flex-col gap-5 mt-10">
+                <div class="text-[40px]">What people are Saying About A.Coutures</div>
+                <p class="text-sm">Our customers love our services😁</p>
+                <div><img src="./img/flash.svg" alt=""></div>
+                <div>I feel very satisfied using this brand , I don't wait for delivery and i get what i order , I even get returning customers' packages 😍</div>
+                <p>_ Aria Christian</p>
+              </div>
+            </div> 
+            <div class="carousel-item">
+              <div id="testimonial" class="flex flex-col gap-5 mt-10">
+                <div class="text-[40px]">What people are Saying About A.Coutures</div>
+                <p class="text-sm">Our customers love our services😁</p>
+                <div><img src="./img/flash.svg" alt=""></div>
+                <div>I feel very satisfied using this brand , I don't wait for delivery and i get what i order , I even get returning customers' packages 😍</div>
+                <p>_ Aria Christian</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="testimonial" class="flex flex-col gap-5 mt-10">
+                <div class="text-[40px]">What people are Saying About A.Coutures</div>
+                <p class="text-sm">Our customers love our services😁</p>
+                <div><img src="./img/flash.svg" alt=""></div>
+                <div>I feel very satisfied using this brand , I don't wait for delivery and i get what i order , I even get returning customers' packages 😍</div>
+                <p>_ Aria Christian</p>
+              </div>
+            </div>
+
+          </div>
+          
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo1" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
+
         <!-- bg-gray-950 -->
-        <div id="join" class=" mx-[2] mt-10 px-3">
+        <div id="join" class=" mx-[2] mt-10 px-3 border-b-2 border-white">
           <div class="flex flex-col gap-3">
             <img src="./img/shop.svg" alt="" class="self-center w-min">
             <p class="text-3xl text-center">Get Started</p>
@@ -188,8 +295,8 @@
             </div>
         </div>
 
-        <div id="support, products, help and solution" class="flex justify-around">
-          <div class="text-center">
+        <div id="support, products, help and solution" class="flex justify-around lg:flex-col">
+          <div class="text-center lg:flex lg:gap-5">
             <p class="animate-bounce cursor-pointer">OUR COMPANY</p>
             <p class="hover:animate-pulse cursor-pointer">About</p>
             <p class="hover:animate-pulse cursor-pointer">Contact us</p>
@@ -200,7 +307,7 @@
             <p class="hover:animate-pulse cursor-pointer">Vacancies</p>
             <p class="hover:animate-pulse cursor-pointer">Return policy</p>
           </div>
-          <div class="text-center">
+          <div class="text-center lg:flex lg:gap-5">
             <p class="animate-bounce cursor-pointer">PRODUCTS</p>
             <p class="hover:animate-pulse cursor-pointer">Vintage Scarfs</p>
             <p class="hover:animate-pulse cursor-pointer">Men clothes</p>
@@ -210,7 +317,7 @@
             <p class="hover:animate-pulse cursor-pointer">Seaming service</p>
             <p class="hover:animate-pulse cursor-pointer">Salon</p>
           </div>
-          <div class="text-center">
+          <div class="text-center lg:flex lg:gap-5">
             <p class="mt-5 animate-bounce cursor-pointer">HELP AND SOLUTION</p>
             <div class=" hover:scale-110"><a href="#" class="no-underline text-white">support@Acoutures.com</a></div>
             <p class="mt-8 animate-bounce cursor-pointer">SOCIALS</p>

@@ -29,7 +29,7 @@
   
   /* Add some content at the bottom of the video/page */
   .content {
-    position:fixed;
+    position: fixed;
     top: 0;
     z-index: 1;
     background: rgba(0, 0, 0, 0.5);
@@ -110,5 +110,12 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+    }
+    #footer{
+      display: flex;
+      flex-direction: column;
+    }
+    #happy{
+      display: unset;
     }
   }

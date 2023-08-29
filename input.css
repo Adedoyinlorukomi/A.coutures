@@ -117,6 +117,9 @@
       flex-direction: column;
       gap: 20px;
       padding-top: 20px;
+      top: 0;
+      right: 0;
+      left: 0;
     }
     #footer{
       display: flex;

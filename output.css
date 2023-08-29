@@ -653,11 +653,6 @@ video {
   margin: auto;
 }
 
-.mx-12 {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
 .mx-\[10px\] {
   margin-left: 10px;
   margin-right: 10px;
@@ -671,11 +666,6 @@ video {
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-}
-
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .mb-3 {
@@ -1702,10 +1692,6 @@ video {
 
 .rounded-\[5px\] {
   border-radius: 5px;
-}
-
-.rounded-\[190px\] {
-  border-radius: 190px;
 }
 
 .rounded-b {
@@ -2863,6 +2849,11 @@ video {
     padding-bottom: 0px;
   }
 
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -2870,11 +2861,6 @@ video {
 
   .sm\:text-xl {
     font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .sm\:text-lg {
-    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 

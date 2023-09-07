@@ -811,6 +811,10 @@ video {
   height: 3.5rem;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
 .w-\[130px\] {
   width: 130px;
 }
@@ -2833,6 +2837,10 @@ video {
 
   .sm\:h-\[400px\] {
     height: 400px;
+  }
+
+  .sm\:h-\[200px\] {
+    height: 200px;
   }
 
   .sm\:grid-cols-3 {
